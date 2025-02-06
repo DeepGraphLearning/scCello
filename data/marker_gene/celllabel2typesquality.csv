@@ -1,0 +1,99 @@
+dataset,original label,aligned label,quality
+GSE158055,NK,"Natural killer cell,NK cell",0.34934511499655324
+GSE158055,CD8,"CD8+ cytotoxic T cell,CD8+ regulatory T cell,CD8+ T cell,Effector CD8+ memory T (Tem) cell,Naive CD8+ T cell",0.5832030492562322
+GSE158055,Plasma,Plasma cell,0.4090909090909091
+GSE158055,CD4,"CD4+ cytotoxic T cell,CD4+ memory T cell,CD4+ regulatory T cell,CD4+ T cell,CD4+ T helper cell,CD4+CD25+ regulatory T cell,Effector CD4+ memory T (Tem) cell,Activated CD4+ T cell,Naive CD4+ T cell",0.6349181742740632
+GSE158055,Mega,"Megakaryocyte,Megakaryocytes",0.37251303843925054
+GSE158055,Epi,"Ciliated epithelial cell,Epithelial cell,Airway epithelial cell,Alveolar epithelial progenitor cell,Epithelial progenitor cell,Epithelial stem cell,Lung epithelial cell",0.46810160035648807
+GSE158055,Neu,"Neutrophil,Neutrophils",0.3826427771556551
+GSE158055,Mono,"Monocyte,Monocytes",0.44121016104036115
+GSE158055,B,B cell,0.5804643714971978
+GSE158055,DC,Dendritic cell,0.475
+GSE158055,Macro,"Macrophage,Macrophages",0.3798449612403101
+GSE158055,Mast,Mast cell,0.5530973451327433
+GSE96583,Dendritic cells,Dendritic cell,0.475
+GSE96583,CD8 T cells,"CD8+ cytotoxic T cell,CD8+ regulatory T cell,CD8+ T cell,Effector CD8+ memory T (Tem) cell,Naive CD8+ T cell",0.5832030492562322
+GSE96583,NK cells,"Natural killer cell,NK cell",0.34934511499655324
+GSE96583,B cells,B cell,0.5804643714971978
+GSE96583,Megakaryocytes,"Megakaryocyte,Megakaryocytes",0.37251303843925054
+GSE96583,FCGR3A+ Monocytes,"Monocyte,Monocytes",0.44121016104036115
+GSE96583,CD14+ Monocytes,"CD14++CD16- monocyte,CD14+CD16+ monocyte,Monocyte,Monocytes",0.48449396940906947
+GSE96583,,not found,0.0
+GSE96583,CD4 T cells,"CD4+ cytotoxic T cell,CD4+ memory T cell,CD4+ regulatory T cell,CD4+ T cell,CD4+ T helper cell,CD4+CD25+ regulatory T cell,Effector CD4+ memory T (Tem) cell,Activated CD4+ T cell,Naive CD4+ T cell",0.6349181742740632
+scGAD_AHsP,Megakaryocytes,"Megakaryocyte,Megakaryocytes",0.37251303843925054
+scGAD_AHsP,Stromal cells,"Stromal cell,Bone marrow stromal cell,Mesenchymal stromal cell,Stromal stem cell",0.3484911827303132
+scGAD_AHsP,AFP_ALB positive cells,not found,0.0
+scGAD_AHsP,Trophoblast giant cells,Trophoblast cell,0.3076923076923077
+scGAD_AHsP,Lymphoid cells,"Lymphoid cell,Lymphoid stem cell",0.4780701754385965
+scGAD_AHsP,Syncytiotrophoblasts and villous cytotrophoblasts,"Villous cytotrophoblast,Syncytiotrophoblast",0.75
+scGAD_AHsP,Myeloid cells,Myeloid cell,0.44086021505376344
+scGAD_AHsP,Smooth muscle cells,Smooth muscle cell,0.39285714285714285
+scGAD_AHsP,Vascular endothelial cells,Vascular endothelial cell,0.8
+scGAD_AHsP,PAEP_MECOM positive cells,not found,0.0
+scGAD_AHsP,Extravillous trophoblasts,Extravillous trophoblast cell,0.5
+scGAD_AHsP,IGFBP1_DKK1 positive cells,not found,0.0
+scGAD_AHsP,,not found,0.0
+GSE84133,endothelial,Endothelial cell,0.5581737849779087
+GSE84133,schwann,Schwann cell,0.4
+GSE84133,mast,Mast cell,0.5530973451327433
+GSE84133,beta,Beta cell,0.6098901098901099
+GSE84133,activated_stellate,not found,0.0
+GSE84133,macrophage,"Macrophage,Macrophages",0.3798449612403101
+GSE84133,acinar,Acinar cell,0.6089743589743589
+GSE84133,quiescent_stellate,not found,0.0
+GSE84133,epsilon,Epsilon cell,0.2945205479452055
+GSE84133,gamma,Gamma (PP) cell,0.30434782608695654
+GSE84133,t_cell,T cell,0.4396551724137931
+GSE84133,delta,Delta cell,0.5714285714285714
+GSE84133,alpha,Alpha cell,0.5681818181818182
+GSE84133,ductal,Ductal cell,1.0
+GSE81861,MastCell,Mast cell,0.5530973451327433
+GSE81861,Tcell,T cell,0.4396551724137931
+GSE81861,Macrophage,"Macrophage,Macrophages",0.3798449612403101
+GSE81861,Fibroblast,"Fibroblast,Fibroblasts",0.35922202797202796
+GSE81861,Bcell,B cell,0.5804643714971978
+GSE81861,Endothelial,Endothelial cell,0.5581737849779087
+GSE81861,,not found,0.0
+GSE81861,Epithelial,"Corneal epithelial progenitor cell,Corneal epithelial stem cell,Epithelial cell,Epithelial stem cell,Epithelial progenitor cell",0.5195816644414775
+GSE81861,A549,Lung epithelial cell,0.5833333333333334
+GSE81861,GM12878_B1,not found,0.0
+GSE81861,IMR90,not found,0.0
+GSE81861,K562,Lymphoblast,1.0
+GSE81861,HCT116,not found,0.0
+GSE81861,H1437,not found,0.0
+GSE81861,H1_B2,Embryonic stem cell,0.38961038961038963
+GSE81861,GM12878_B2,not found,0.0
+GSE81861,H1_B1,Embryonic stem cell,0.38961038961038963
+GSE81861,GobletLike,"Goblet cell,Goblet progenitor cell",0.6258384368620589
+GSE81861,EnterocyteLike,"Enterocyte,Enterocyte progenitor cell,Enterocytes",0.5225018588266842
+GSE81861,stemTA,not found,0.0
+GSE81861,EnterocyteType1A,"Enterocyte,Enterocyte progenitor cell,Enterocytes",0.5225018588266842
+GSE81861,GobletA,"Goblet cell,Goblet progenitor cell",0.6258384368620589
+GSE81861,NonStem1,not found,0.0
+GSE81861,EnterocyteType2,"Enterocyte,Enterocyte progenitor cell,Enterocytes",0.5225018588266842
+GSE81861,GobletB,"Goblet cell,Goblet progenitor cell",0.6258384368620589
+GSE81861,GobletC,"Goblet cell,Goblet progenitor cell",0.6258384368620589
+GSE81861,stemTA,not found,0.0
+GSE81861,EnterocyteType1B,"Enterocyte,Enterocyte progenitor cell,Enterocytes",0.5225018588266842
+GSE81861,Unknown,not found,0.0
+GSE81861,NonStem2,not found,0.0
+GSE81861,Endothelial,Endothelial cell,0.5581737849779087
+GSE81861,MastCell,Mast cell,0.5530973451327433
+GSE81861,Macrophage,"Macrophage,Macrophages",0.3798449612403101
+GSE81861,Bcell,B cell,0.5804643714971978
+GSE81861,Fibroblast,"Fibroblast,Fibroblasts",0.35922202797202796
+GSE81861,Tcell,T cell,0.4396551724137931
+GSE81861,Epithelial,"Corneal epithelial progenitor cell,Corneal epithelial stem cell,Epithelial cell,Epithelial stem cell,Epithelial progenitor cell",0.5195816644414775
+GSE130148,Macrophages,"Macrophage,Macrophages",0.3798449612403101
+GSE130148,T cell,T cell,0.4396551724137931
+GSE130148,NK cell,"Natural killer cell,NK cell",0.34934511499655324
+GSE130148,Mast cell,Mast cell,0.5530973451327433
+GSE130148,Endothelium,Endothelial cell,0.5581737849779087
+GSE130148,Lymphatic,Lymphatic endothelial cell,0.5
+GSE130148,Type 2,T helper2 (Th2) cell,0.5074626865671642
+GSE130148,Transformed epithelium,"Airway epithelial cell,Lung epithelial cell",0.5189393939393939
+GSE130148,Ciliated,Ciliated epithelial cell,0.5742574257425742
+GSE130148,Type 1,T helper1 (Th1) cell,0.43478260869565216
+GSE130148,B cell,B cell,0.5804643714971978
+GSE130148,Fibroblast,"Fibroblast,Fibroblasts",0.35922202797202796
+GSE130148,Secretory,"Airway secretory cell,Secretory cell,Secretory progenitor cell",0.620575753174872

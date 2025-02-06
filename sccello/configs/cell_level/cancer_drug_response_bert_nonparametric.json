@@ -1,0 +1,25 @@
+{
+    "learning_rate": 5e-3,
+    "do_train": false,
+    "do_eval": false,
+    "do_predict": true,
+    "group_by_length": false,
+    "length_column_name": "length",
+    "disable_tqdm": false,
+    "lr_scheduler_type": "linear",
+    "warmup_steps": 500,
+    "weight_decay": 0.001,
+    "num_train_epochs": 20,
+    "logging_steps": 20,
+    "report_to": "wandb",
+    
+    "evaluation_strategy": "no",
+    "load_best_model_at_end": false,
+    
+    "run_name": "",
+    "output_dir": "",
+    "label_names": ["labels"],
+    "dataloader_num_workers": 12,
+    "per_device_train_batch_size": 16,
+    "per_device_eval_batch_size": 16
+}

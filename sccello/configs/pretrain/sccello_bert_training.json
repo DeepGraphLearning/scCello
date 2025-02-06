@@ -1,0 +1,27 @@
+{
+  "learning_rate": 1e-3,
+  "do_train": true,
+  "do_eval": true,
+  "evaluation_strategy": "steps",
+  "eval_steps": 2500,
+  "eval_accumulation_steps": 4,
+  "group_by_length": true,
+  "length_column_name": "length",
+  "disable_tqdm": false,
+  "lr_scheduler_type": "linear",
+  "warmup_steps": 3333,
+  "weight_decay": 0.001,
+  "num_train_epochs": 3,
+  "save_strategy": "steps",
+  "logging_steps": 10,
+  "report_to": "wandb",
+  "gradient_accumulation_steps": 4,
+  "save_steps": 10000,
+  
+  "run_name": "",
+  "output_dir": "",
+  "deepspeed": "",
+  "label_names": ["labels"],
+  "dataloader_num_workers": 48,
+  "per_device_train_batch_size": 16
+}
