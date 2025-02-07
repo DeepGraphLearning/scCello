@@ -9,7 +9,7 @@
 
 </div>
 
-PyG implementation of [scCello], a cell-ontology guided transcriptome foundation model (TFM) for single cell RNA-seq data. Authored by [Xinyu Yuan], and [Zhihao Zhan].
+PyTorch implementation of [scCello], a cell-ontology guided transcriptome foundation model (TFM) for single cell RNA-seq data. Authored by [Xinyu Yuan], and [Zhihao Zhan].
 
 [Xinyu Yuan]: https://github.com/KatarinaYuan
 [Zhihao Zhan]: https://github.com/zhan8855
