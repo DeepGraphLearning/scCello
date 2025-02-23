@@ -94,6 +94,11 @@ from sccello.src.model_prototype_contrastive import PrototypeContrastiveForMaske
 model = PrototypeContrastiveForMaskedLM.from_pretrained("katarinayuan/scCello-zeroshot", output_hidden_states=True)
 ```
 
+or run to ensure the model can load properly
+```
+python ./sccello/script/run_load_model.py 
+```
+
 * for linear probing tasks (see details in sccello/script/run_cell_type_classification.py)
 ```
 from sccello.src.model_prototype_contrastive import PrototypeContrastiveForSequenceClassification
