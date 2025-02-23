@@ -11,7 +11,6 @@ import torch.nn.functional as F
 EXC_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 
 from sccello.src.utils import logging_util
-from sccello.src.model_prototype_contrastive import PrototypeContrastiveForMaskedLM
 
 
 def set_seed(seed):
