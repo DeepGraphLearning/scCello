@@ -37,6 +37,7 @@ def parse_args():
     
     parser.add_argument("--indist", type=int, default=0)
     parser.add_argument('--sample_outdist', action='store_true', help='Samples the out of distribution')
+    parser.add_argument('--num_samples', type=int, default=10, help='If sample_outdist is set, this sets the number of samples')
     parser.add_argument("--normalize", type=int, default=0)
     parser.add_argument("--pass_cell_cls", type=int, default=0)
 
@@ -129,7 +130,7 @@ if __name__ == "__main__":
         helpers.set_seed(args.seed)
         args.data_source = f"frac_{name}"
         all_datasets = (
-            data_loading.get_fracdata_sample(name)
+            data_loading.get_fracdata_sample(name, num_samples=args.num_samples)
             if args.sample_outdist else
             data_loading.get_fracdata(name, args.data_branch, args.indist, False)
         )

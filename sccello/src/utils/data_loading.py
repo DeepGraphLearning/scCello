@@ -112,15 +112,18 @@ def get_prestored_data(data_file_name):
     else:
         raise NotImplementedError
 
-def get_fracdata_sample(name, num_proc=12):
+def get_fracdata_sample(name, num_proc=12, num_samples=10):
 
     from sccello.src.data.dataset import CellTypeClassificationDataset
     data1, data2 = CellTypeClassificationDataset.create_dataset(name)
     data1 = data1.rename_column("gene_token_ids", "input_ids")
     data2 = data2.rename_column("gene_token_ids", "input_ids")
 
+    data1, data2 = data1.select(range(num_samples)), data2.select(range(num_samples))
+
     data1, eval_label_type_idmap = helpers.process_label_type(data1, num_proc, "label")
     data2, test_label_type_idmap = helpers.process_label_type(data2, num_proc, "label")
+
     return None, data1, data2, None
 
 def get_fracdata(name, data_branch, indist, batch_effect, num_proc=12):
