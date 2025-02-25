@@ -76,6 +76,8 @@ def create_downstream_output_dir(args):
 
 def load_model_inference(args):
     
+    from sccello.src.model_prototype_contrastive import PrototypeContrastiveForMaskedLM
+    
     model = eval(args.model_class).from_pretrained(args.pretrained_ckpt, output_hidden_states=True).to("cuda")
     for param in model.bert.parameters():
         param.requires_grad = False
