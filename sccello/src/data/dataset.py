@@ -32,8 +32,8 @@ class CellTypeClassificationDataset():
     @classmethod
     def create_dataset(cls, subset_name="celltype"):
         assert subset_name in cls.subsets["frac"]
-        valid_data = load_dataset(f"katarinayuan/scCello_ood_{subset_name}_data1")["train"]
-        test_data = load_dataset(f"katarinayuan/scCello_ood_{subset_name}_data2")["train"]
+        valid_data = load_dataset(f"katarinayuan/scCello_ood_{subset_name}_data1", split="train")
+        test_data = load_dataset(f"katarinayuan/scCello_ood_{subset_name}_data2", split="train")
 
         valid_data = valid_data.rename_column("cell_type", "label")
         test_data = test_data.rename_column("cell_type", "label")
