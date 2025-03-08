@@ -65,7 +65,13 @@ def get_cell_type_labelid2nodeid(cell_type_idmap, clid2nodeid):
     # e.g., {'placental pericyte': CL:2000078, ...}
     name2clid = {v.lower(): k for k, v in clid2name.items()}
 
-    cell_type2nodeid = dict([(k, clid2nodeid[name2clid[cell_type2name[k]]]) if cell_type2name[k] in name2clid else (k, -1) for k in cell_type2name])
+    cell_type2nodeid = dict(
+        [
+            (k, clid2nodeid[name2clid[cell_type2name[k]]])
+            if cell_type2name[k] in name2clid else (k, -1)
+            for k in cell_type2name
+        ]
+    )
     return cell_type2nodeid
 
 def load_cell_type_representation(args, model):

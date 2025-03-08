@@ -8,7 +8,7 @@ import scib
 import ipdb
 
 import torch
-# assert torch.cuda.is_available()
+assert torch.cuda.is_available()
 
 import cupy as cp
 from cuml.metrics.cluster import silhouette_score as cu_silhouette_score
