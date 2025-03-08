@@ -36,6 +36,8 @@ def parse_args():
     parser.add_argument("--model_source", type=str, default="model_prototype_contrastive")
     
     parser.add_argument("--indist", type=int, default=0)
+    parser.add_argument('--sample_outdist', action='store_true', help='Samples the out of distribution')
+    parser.add_argument('--num_samples', type=int, default=10, help='If sample_outdist is set, this sets the number of samples')
     parser.add_argument("--normalize", type=int, default=0)
     parser.add_argument("--pass_cell_cls", type=int, default=0)
 
@@ -59,7 +61,7 @@ def parse_args():
     return args
 
 def solve_clustering(args, all_datasets):
-    trainset, test_data1, test_data2, label_dict = all_datasets
+    _, test_data1, test_data2, _ = all_datasets
 
     args.output_dir = helpers.create_downstream_output_dir(args)
 
@@ -119,10 +121,17 @@ if __name__ == "__main__":
     names = CellTypeClassificationDataset.subsets["frac"]
     if args.indist:
         names = [names[0]]
+
+    if args.sample_outdist:
+        names = [names[1]]
         
     for name in names:
         # every data is tested under the same seeded setting
         helpers.set_seed(args.seed)
         args.data_source = f"frac_{name}"
-        all_datasets = data_loading.get_fracdata(name, args.data_branch, args.indist, False)
+        all_datasets = (
+            data_loading.get_fracdata_sample(name, num_samples=args.num_samples)
+            if args.sample_outdist else
+            data_loading.get_fracdata(name, args.data_branch, args.indist, False)
+        )
         solve_clustering(args, all_datasets)

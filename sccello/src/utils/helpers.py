@@ -11,7 +11,6 @@ import torch.nn.functional as F
 EXC_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 
 from sccello.src.utils import logging_util
-from sccello.src.model_prototype_contrastive import PrototypeContrastiveForMaskedLM
 
 
 def set_seed(seed):
@@ -76,6 +75,8 @@ def create_downstream_output_dir(args):
 
 
 def load_model_inference(args):
+    
+    from sccello.src.model_prototype_contrastive import PrototypeContrastiveForMaskedLM
     
     model = eval(args.model_class).from_pretrained(args.pretrained_ckpt, output_hidden_states=True).to("cuda")
     for param in model.bert.parameters():
