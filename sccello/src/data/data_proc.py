@@ -164,7 +164,7 @@ class ProcessSingleCellData(datasets.Dataset):
             # avoid zero division error
             size_counts += size_counts == 0.
             size_factor = SCALING_RANGE / size_counts
-            cell_counts += size_counts.squeeze().tolist()[0] # [1, bsz] -> list like [[...]]
+            cell_counts += size_counts.tolist()
             
             if is_cellxgene:
                 expression_num = batch_data.X.multiply(size_factor.reshape((-1, 1))) # coo sparse view: [bsz, #shared_genes]
